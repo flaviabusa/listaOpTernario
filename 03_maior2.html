@@ -4,10 +4,15 @@
     //Construa um algoritmo que leia dois números inteiros. Verifique qual dos dois números é maior e o escreva.
 
     //Entrada
+    const primeiroNum = Number(prompt(`Informe o primeiro número inteiro: `));
+    const segundoNum = Number(prompt(`Informe o segundo número inteiro: `));
 
-    
     //Processamento
-
+    ( primeiroNum > segundoNum ) ?
+        alert(`O número ${primeiroNum} é o maior.`) :
+        ( segundoNum > primeiroNum ) ?
+            alert(`O número ${segundoNum} é o maior.`) :
+            alert(`Os dois números são iguais.`);
     
     //Saída
     
