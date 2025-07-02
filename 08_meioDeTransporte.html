@@ -6,10 +6,17 @@
     // Verifique qual é o meio de transporte mais barato e apresente em tela, especificando quanto custará para ir e voltar do trabalho diariamente.
 
     //Entrada
-
-
+    const precoCombustivel = Number(prompt(`Informe o preço do litro do combustível:`));
+    const litrosUtilizados = Number(prompt(`Informe a quantidade de litros utilizados para se deslocar ao trabalho diariamente:`));
+    const precoTransPublic = Number(prompt(`Informe o preço do transporte público que deverá pagar para se deslocar ao trabalho diariamente:`));
+    
     //Processamento
+    const transPrivado = (precoCombustivel * litrosUtilizados) * 2;
+    const transPublic = precoTransPublic * 2;
 
+    (transPrivado < transPublic)?
+        document.write(`O meio de transporte mais barato será o transporte privado, custando R$ ${transPrivado.toFixed(2)} para ir e voltar do trabalho diariamente.` ):
+        document.write(`O meio de transporte mais barato será o transporte público, custando R$ ${transPublic.toFixed(2)} para ir e voltar do trabalho diariamente.`)
     
     //Saída
 

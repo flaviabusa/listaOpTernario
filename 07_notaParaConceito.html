@@ -10,10 +10,20 @@
     // Entre 5.9 e zero            E
 
     //Entrada
-
+    const nota = Number(prompt(`Informe a sua nota:`));
 
     //Processamento
-
+    (nota <= 10 && nota >= 9)?
+        alert(`Sua nota convertida para conceito é A.`):
+        (nota <= 8.9 && nota >= 8)?
+            alert(`Sua nota convertida para conceito é B.`):
+            (nota <= 7.9 && nota >= 7)?
+                alert(`Sua nota convertida para conceito é C.`):
+                (nota <= 6.9 && nota >= 6)?
+                    alert(`Sua nota convertida para conceito é D.`):
+                    (nota >= 5.9 && nota >= 0)?
+                        alert(`Sua nota convertida para conceito é E.`):
+                        alert(`Nota inválida.`);
     
     //Saída
 

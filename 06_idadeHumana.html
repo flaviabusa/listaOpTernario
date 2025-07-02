@@ -8,10 +8,22 @@
     // - cães grandes: fator 7.
 
     //Entrada
-
+    const idadeCao = Number(prompt(`Informe a idade do seu cão: `));
+    const porteCao = prompt(`Informe o porte do seu cão: ( P - pequeno, M - médio, G - grande)`).toUpperCase().trim();
 
     //Processamento
+    const fator5 =  idadeCao * 5;
+    const fator6 = idadeCao * 6;
+    const fator7 = idadeCao * 7;
 
+    (porteCao === "P" )?
+        alert(`De acordo com o porte do seu cão, a idade dele é de aproximadamente ${fator5} anos.`):
+        (porteCao === "M")?
+            alert(`De acordo com o porte do seu cão, a idade dele é de aproximadamente ${fator6} anos.`):
+            (porteCao === "G")?
+                alert(`De acordo com o porte do seu cão, a idade dele é de aproximadamente ${fator7} anos.`):
+                alert(`Dados inválidos.`);
+       
     
     //Saída
 
